@@ -330,20 +330,6 @@ kbd {
   padding: 0.1em 0.3em;
   white-space: nowrap;
 }
-h1 {
-  font-size: 27px;
-  position: relative;
-  padding: 15px;
-  margin-bottom: 20px;
-  border: 1px solid #eee;
-  border-radius: 3px;
-  border-left-color: #f00;
-  border-left-width: 5px;
-  background-color: #406ca4;
-  color: #fff;
-  font-family: cursive;
-  border-radius: 15px 15px 15px 15px !important;
-}
 .text-left {
   text-align: left;
 }
@@ -1857,7 +1843,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #d0b0eb;
+  background: #ff4103;
 }
 .links-of-blogroll {
   font-size: 13px;

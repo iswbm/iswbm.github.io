@@ -1,0 +1,1048 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="en">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.ico?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.ico?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="一、创建博客项目 1.1 准备工作 下载node.js并安装（官网下载安装），默认会安装npm。 下载安装git（官网下载安装） 下载安装hexo。方法：打开终端 运行npm install -g hexo（要翻墙）">
+<meta property="og:type" content="article">
+<meta property="og:title" content="全网最全最实用的 Hexo 博客搭建教程">
+<meta property="og:url" content="http://python.iswbm.com/2020/03/21/1/index.html">
+<meta property="og:site_name" content="写代码的时光">
+<meta property="og:description" content="一、创建博客项目 1.1 准备工作 下载node.js并安装（官网下载安装），默认会安装npm。 下载安装git（官网下载安装） 下载安装hexo。方法：打开终端 运行npm install -g hexo（要翻墙）">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://image.python-online.cn/image-20200321163152876.png">
+<meta property="og:image" content="http://image.python-online.cn/image-20200321163746032.png">
+<meta property="og:image" content="http://image.python-online.cn/image-20200321165634287.png">
+<meta property="og:image" content="http://image.python-online.cn/image-20200321171008622.png">
+<meta property="og:image" content="http://image.python-online.cn/image-20200321171939919.png">
+<meta property="og:image" content="http://image.python-online.cn/image-20200321171821683.png">
+<meta property="og:image" content="http://image.python-online.cn/17-9-10/85269241.jpg">
+<meta property="og:image" content="http://image.python-online.cn/image-20200321201555321.png">
+<meta property="og:image" content="http://image.python-online.cn/17-9-9/63041495.jpg">
+<meta property="og:image" content="http://image.python-online.cn/image-20200321193444320.png">
+<meta property="og:image" content="https://i.loli.net/2018/04/15/5ad31888232e9.png">
+<meta property="og:image" content="http://image.python-online.cn/image-20200320125724880.png">
+<meta property="article:published_time" content="2020-03-21T12:15:21.000Z">
+<meta property="article:modified_time" content="2020-03-21T12:17:21.871Z">
+<meta property="article:author" content="王炳明">
+<meta property="article:tag" content="python">
+<meta property="article:tag" content="go">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://image.python-online.cn/image-20200321163152876.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://python.iswbm.com/2020/03/21/1/"/>
+
+
+
+
+
+  <title>全网最全最实用的 Hexo 博客搭建教程 | 写代码的时光</title>
+  
+
+
+
+
+
+
+
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband">
+    </div>
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">写代码的时光</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">明哥</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            About
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            Categories
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archives
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-schedule">
+          <a href="/schedule/%20" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-calendar"></i> <br />
+            
+            Schedule
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://python.iswbm.com/2020/03/21/1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="王炳明">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="写代码的时光">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">全网最全最实用的 Hexo 博客搭建教程</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-03-21T20:15:21+08:00">
+                2020-03-21
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2020/03/21/1/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2020/03/21/1/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="一、创建博客项目"><a href="#一、创建博客项目" class="headerlink" title="一、创建博客项目"></a>一、创建博客项目</h2><hr>
+<h3 id="1-1-准备工作"><a href="#1-1-准备工作" class="headerlink" title="1.1 准备工作"></a>1.1 准备工作</h3><ul>
+<li>下载<a href="http://nodejs.cn/download/" target="_blank" rel="noopener">node.js</a>并安装（官网下载安装），默认会安装npm。</li>
+<li>下载安装git（官网下载安装）</li>
+<li>下载安装hexo。方法：打开终端 运行<code>npm install -g hexo</code>（要翻墙）</li>
+</ul>
+<p><img src="http://image.python-online.cn/image-20200321163152876.png" alt=""></p>
+<a id="more"></a>
+
+<h3 id="1-2-初始化项目"><a href="#1-2-初始化项目" class="headerlink" title="1.2 初始化项目"></a>1.2 初始化项目</h3><ul>
+<li>新创建一个目录，比如叫做 <code>iswbm-blog</code></li>
+<li>使用终端进入该文件夹内，执行<code>hexo init</code> （初始化项目）</li>
+</ul>
+<p><img src="http://image.python-online.cn/image-20200321163746032.png" alt=""></p>
+<ul>
+<li>运行你的博客项目（用于调试），查看生成的文章是否符合自己的预期。</li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> hexo g  <span class="comment"># 生成静态文件</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> hexo s  <span class="comment"># 运行本地web服务器</span></span></span><br></pre></td></tr></table></figure>
+
+<p>运行完 <code>hexo s</code> 会有一个本地web地址（<code>localhost:4000</code>）出现在你的屏幕，打开它即可看到。</p>
+<h3 id="1-3-部署上线"><a href="#1-3-部署上线" class="headerlink" title="1.3 部署上线"></a>1.3 部署上线</h3><p>要让我们在 <code>localhost:4000</code>  看到的那些内容能够在公网能够访问。我们需要将其部署上线。</p>
+<p>按照下面的步骤来</p>
+<ul>
+<li><p>在Github上创建名字为XXX.github.io的项目，XXX为自己的github用户名。然后 clone 到你的本地电脑上。</p>
+<p><img src="http://image.python-online.cn/image-20200321165634287.png" alt=""></p>
+</li>
+<li><p>打开该文件夹内的<code>_config.yml</code>配置文件，将其中的type设置为git，其他配置如下</p>
+</li>
+</ul>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Deployment</span></span><br><span class="line"><span class="comment">## Docs: https://hexo.io/docs/deployment.html</span></span><br><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repository:</span> <span class="string">https://github.com/iswbm/iswbm.github.io.git</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>安装Git部署插件</li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> npm install hexo-deployer-git --save</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>重新生成静态文件，部署上线。</li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> hexo clean</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> hexo g</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> hexo d</span></span><br></pre></td></tr></table></figure>
+
+<p>在第一次部署后，请到 github 后台，补充你的 网站信息，否则无法访问。</p>
+<p><img src="http://image.python-online.cn/image-20200321171008622.png" alt=""></p>
+<p>一切完成之后，你就可以通过上面的网址来访问我的博客了。</p>
+<h3 id="1-4-绑定域名"><a href="#1-4-绑定域名" class="headerlink" title="1.4 绑定域名"></a>1.4 绑定域名</h3><p>做为一个个人博客，使用 github的域名，明显不够个性化。</p>
+<p>我们可以自己去阿里云购买一个域名（我的是 iswbm.com），然后将其 CNAME 到你的博客地址上。</p>
+<ul>
+<li><p>去阿里云 域名云解析<br><img src="http://image.python-online.cn/image-20200321171939919.png" alt=""></p>
+</li>
+<li><p>然后到对应的GitHub仓库，绑定我的个性域名<br><img src="http://image.python-online.cn/image-20200321171821683.png" alt=""></p>
+</li>
+<li><p>然后再在你本地的项目里的 <code>source</code> 目录下新建 <code>CNAME</code>文件，内容就是我的域名</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">iswbm.com</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>然后重新部署，使配置生效。这样就可以使用域名访问。</p>
+  <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> hexo clean</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> hexo g</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> hexo d</span></span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h2 id="二、丰富博客页面"><a href="#二、丰富博客页面" class="headerlink" title="二、丰富博客页面"></a>二、丰富博客页面</h2><hr>
+<h3 id="2-1-标签页"><a href="#2-1-标签页" class="headerlink" title="2.1 标签页"></a>2.1 标签页</h3><p>具体请参考下官方教程：<a href="https://github.com/iissnan/hexo-theme-next/wiki/创建标签云页面" target="_blank" rel="noopener">创建标签云页面</a></p>
+<h3 id="2-2-分类页面"><a href="#2-2-分类页面" class="headerlink" title="2.2 分类页面"></a>2.2 分类页面</h3><p>具体请参考下官方教程：<a href="https://github.com/iissnan/hexo-theme-next/wiki/创建分类页面" target="_blank" rel="noopener">创建分类页面</a></p>
+<h3 id="2-3-关于页面"><a href="#2-3-关于页面" class="headerlink" title="2.3 关于页面"></a>2.3 关于页面</h3><p>具体请参考下官方教程：<a href="https://github.com/iissnan/hexo-theme-next/wiki/创建-" target="_blank" rel="noopener"关于我"-页面">创建关于页面</a></p>
+<h2 id="三、博文书写技巧"><a href="#三、博文书写技巧" class="headerlink" title="三、博文书写技巧"></a>三、博文书写技巧</h2><hr>
+<h3 id="3-1-引用块"><a href="#3-1-引用块" class="headerlink" title="3.1 引用块"></a>3.1 引用块</h3><p>更多设置，查看<a href="https://hexo.io/zh-cn/docs/tag-plugins.html" target="_blank" rel="noopener">官方文档</a></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;% blockquote David Levithan, Wide Awake %&#125;</span><br><span class="line">Do not just seek happiness for yourself. Seek happiness for all. Through kindness. Through mercy.</span><br><span class="line">&#123;% endblockquote %&#125;</span><br></pre></td></tr></table></figure>
+<p>效果如下<br><img src="http://image.python-online.cn/17-9-10/85269241.jpg" alt=""></p>
+<h3 id="3-2-一键生成md头格式"><a href="#3-2-一键生成md头格式" class="headerlink" title="3.2 一键生成md头格式"></a>3.2 一键生成md头格式</h3><p>首先在<code>/scaffolds/post.md</code>文件中添加：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: &#123;&#123; title &#125;&#125;</span><br><span class="line">date: &#123;&#123; date &#125;&#125;</span><br><span class="line">tags:</span><br><span class="line">categories:</span><br><span class="line">copyright: true</span><br><span class="line">permalink: 01</span><br><span class="line">top: 0</span><br><span class="line">password:</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+
+<p>然后使用 <code>hexo new</code>就可以一键生成新文章的头格式了，不用手动去搬运或者书写。相当方便。</p>
+<p><img src="http://image.python-online.cn/image-20200321201555321.png" alt="image-20200321201555321"></p>
+<h2 id="四、美化博客"><a href="#四、美化博客" class="headerlink" title="四、美化博客"></a>四、美化博客</h2><hr>
+<h3 id="4-1-更换主题"><a href="#4-1-更换主题" class="headerlink" title="4.1 更换主题"></a>4.1 更换主题</h3><p>在 hexo 部署目录下，使用如下命令下载主题</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https:&#x2F;&#x2F;github.com&#x2F;iissnan&#x2F;hexo-theme-next themes&#x2F;next</span><br></pre></td></tr></table></figure>
+
+<p>打开站点配置文件（部署代码根目录下的 <code>_config.yml</code>）选择刚刚下载的next主题</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># Extensions</span><br><span class="line">## Plugins: https:&#x2F;&#x2F;hexo.io&#x2F;plugins&#x2F;</span><br><span class="line">## Themes: https:&#x2F;&#x2F;hexo.io&#x2F;themes&#x2F;</span><br><span class="line">theme: next</span><br></pre></td></tr></table></figure>
+
+<p>然后再编辑 <code>themes/next/_config.yml</code> 选择主题样式</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scheme: Pisces</span><br></pre></td></tr></table></figure>
+
+<h3 id="4-2-ico缩略图"><a href="#4-2-ico缩略图" class="headerlink" title="4.2 ico缩略图"></a>4.2 ico缩略图</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">1. 制作icon图标，最好是32x32，可以在这里制作：https:&#x2F;&#x2F;tool.lu&#x2F;favicon&#x2F;</span><br><span class="line"></span><br><span class="line">2. 将制作的ico文件，放到next主题source&#x2F;images目录下</span><br><span class="line"></span><br><span class="line">3. 配置ico文件路径。配置文件在 themes&#x2F;next&#x2F;_config.yml</span><br><span class="line">favicon:</span><br><span class="line">  small: &#x2F;images&#x2F;favicon-16x16-next.ico</span><br><span class="line">  medium: &#x2F;images&#x2F;favicon-32x32-next.ico</span><br></pre></td></tr></table></figure>
+
+<h3 id="4-3-菜单栏和图标"><a href="#4-3-菜单栏和图标" class="headerlink" title="4.3 菜单栏和图标"></a>4.3 菜单栏和图标</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">menu:</span><br><span class="line">  home: &#x2F; || home</span><br><span class="line">  about: &#x2F;about&#x2F; || user</span><br><span class="line">  tags: &#x2F;tags&#x2F; || tags</span><br><span class="line">  categories: &#x2F;categories&#x2F; || th</span><br><span class="line">  archives: &#x2F;archives&#x2F; || archive</span><br><span class="line">  schedule: &#x2F;schedule&#x2F; || calendar</span><br><span class="line">  # sitemap: &#x2F;sitemap.xml || sitemap</span><br><span class="line">  # commonweal: &#x2F;404&#x2F; || heartbeat</span><br><span class="line"></span><br><span class="line"># Enable&#x2F;Disable menu icons.</span><br><span class="line">menu_icons:</span><br><span class="line">  enable: true</span><br></pre></td></tr></table></figure>
+<h3 id="4-4-社交网络和图标"><a href="#4-4-社交网络和图标" class="headerlink" title="4.4 社交网络和图标"></a>4.4 社交网络和图标</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">social:</span><br><span class="line">  GitHub: https:&#x2F;&#x2F;github.com&#x2F;iswbm || github</span><br><span class="line">  E-Mail: mailto:wongbingming@163.com || envelope-o</span><br><span class="line">  微博: http:&#x2F;&#x2F;weibo.com&#x2F;942663728 || weibo</span><br><span class="line">  WeChat: http:&#x2F;&#x2F;image.python-online.cn&#x2F;17-9-9&#x2F;58657236.jpg || weixin</span><br><span class="line">  知乎: https:&#x2F;&#x2F;www.zhihu.com&#x2F;people&#x2F;wongbingming&#x2F;activities || chain-broken</span><br><span class="line">  CnBlog: http:&#x2F;&#x2F;www.cnblogs.com&#x2F;wongbingming&#x2F; || file-text-o</span><br><span class="line"></span><br><span class="line">social_icons:</span><br><span class="line">  enable: true</span><br><span class="line">  icons_only: false</span><br><span class="line">  transition: false</span><br></pre></td></tr></table></figure>
+<h3 id="4-5-背景动画"><a href="#4-5-背景动画" class="headerlink" title="4.5 背景动画"></a>4.5 背景动画</h3><p>在<code>next</code>下的<code>_config.yml</code>找到<code>canvas_nest</code>设置为<code>True</code></p>
+<h3 id="4-6-添加热度"><a href="#4-6-添加热度" class="headerlink" title="4.6 添加热度"></a>4.6 添加热度</h3><p>next主题集成leanCloud，我只需稍微配置下(在主题配置文件)<br>其中的id和key要去<code>LeanCloud</code>注册登录然后创建应用后，新建Class，名字一定要是<code>Counter</code>，然后查看id和key填入</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">post_meta:</span><br><span class="line">  item_text: true</span><br><span class="line"></span><br><span class="line">leancloud_visitors:</span><br><span class="line">  enable: true</span><br><span class="line">  app_id: 你的id</span><br><span class="line">  app_key: 你的key</span><br></pre></td></tr></table></figure>
+<p>打开<code>themes/next/layout/_macro/post.swig</code><br>在<code>”leancloud-visitors-count”&gt;</code>标签后面添加℃。<br>然后打开，<code>themes/next/languages/zh-Hans.yml</code>，将visitors内容改为热度即可。</p>
+<p>为什么不直接用不蒜子，因为首页的时候，无法显示。<br>如果也开了不蒜子的计数功能的话，可以直接把下面代码删掉</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;% if not is_index and theme.busuanzi_count.enable and theme.busuanzi_count.page_pv %&#125;</span><br><span class="line">            &lt;span class&#x3D;&quot;post-meta-divider&quot;&gt;|&lt;&#x2F;span&gt;</span><br><span class="line">            &lt;span class&#x3D;&quot;page-pv&quot;&gt;&#123;&#123; theme.busuanzi_count.page_pv_header &#125;&#125;</span><br><span class="line">            &lt;span class&#x3D;&quot;busuanzi-value&quot; id&#x3D;&quot;busuanzi_value_page_pv&quot; &gt;&lt;&#x2F;span&gt;&#123;&#123; theme.busuanzi_count.page_pv_footer &#125;&#125;</span><br><span class="line">            &lt;&#x2F;span&gt;</span><br><span class="line">&#123;% endif %&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="4-7-分享插件JiaThis"><a href="#4-7-分享插件JiaThis" class="headerlink" title="4.7 分享插件JiaThis"></a>4.7 分享插件JiaThis</h3><p>默认有好多分享平台，可以在jiathis.swig里删除不需要的</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">jiathis:</span><br><span class="line">  uid: 2135144 #Get this uid from http:&#x2F;&#x2F;www.jiathis.com&#x2F;</span><br><span class="line"># add_this_id:</span><br></pre></td></tr></table></figure>
+<p>隐藏页脚的hexo强力驱动，在<code>footer.swig</code>里注释这段代码</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&lt;!--</span><br><span class="line">&#123;% if theme.copyright %&#125;</span><br><span class="line">  &lt;div class&#x3D;&quot;powered-by&quot;&gt;&#123;#</span><br><span class="line">  #&#125;&#123;&#123; __(&#39;footer.powered&#39;, &#39;&lt;a class&#x3D;&quot;theme-link&quot; href&#x3D;&quot;https:&#x2F;&#x2F;hexo.io&quot;&gt;Hexo&lt;&#x2F;a&gt;&#39;) &#125;&#125;&#123;#</span><br><span class="line">#&#125;&lt;&#x2F;div&gt;</span><br><span class="line"></span><br><span class="line">  &lt;span class&#x3D;&quot;post-meta-divider&quot;&gt;|&lt;&#x2F;span&gt;</span><br><span class="line">  &lt;div class&#x3D;&quot;theme-info&quot;&gt;&#123;#</span><br><span class="line">  #&#125;&#123;&#123; __(&#39;footer.theme&#39;) &#125;&#125; &amp;mdash; &#123;#</span><br><span class="line">  #&#125;&lt;a class&#x3D;&quot;theme-link&quot; href&#x3D;&quot;https:&#x2F;&#x2F;github.com&#x2F;iissnan&#x2F;hexo-theme-next&quot;&gt;&#123;#</span><br><span class="line">    #&#125;NexT.&#123;&#123; theme.scheme &#125;&#125;&#123;#</span><br><span class="line">  #&#125;&lt;&#x2F;a&gt; v&#123;&#123; theme.version &#125;&#125;&#123;#</span><br><span class="line">#&#125;&lt;&#x2F;div&gt;</span><br><span class="line">&#123;% endif %&#125;</span><br><span class="line">--&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="4-8-Fork-me-on-Github"><a href="#4-8-Fork-me-on-Github" class="headerlink" title="4.8 Fork me on Github"></a>4.8 Fork me on Github</h3><p>点击<a href="https://github.com/blog/273-github-ribbons" target="_blank" rel="noopener">这里</a>挑选自己喜欢的样式，并复制代码<br>然后粘贴刚才复制的代码到<code>themes/next/layout/_layout.swig</code>文件中(放在<code>&lt;div class=&quot;headband&quot;&gt;&lt;/div&gt;</code>的下面)，并把<code>href</code>改为你的<code>github</code>地址</p>
+<h3 id="4-9-设置阅读全文"><a href="#4-9-设置阅读全文" class="headerlink" title="4.9 设置阅读全文"></a>4.9 设置阅读全文</h3><p>在md博文里添加</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">以上首页显示</span><br><span class="line">&lt;!--more--&gt;</span><br><span class="line">以下首页不显示</span><br></pre></td></tr></table></figure>
+
+<h3 id="4-10-添加版权"><a href="#4-10-添加版权" class="headerlink" title="4.10 添加版权"></a>4.10 添加版权</h3><p>修改<code>themes/next/layout/_macro/post-copyright.swig</code>如下</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">&lt;ul class&#x3D;&quot;post-copyright&quot;&gt;</span><br><span class="line">  &lt;li class&#x3D;&quot;my_post-copyright-author&quot;&gt;</span><br><span class="line">    &lt;strong&gt;&#123;&#123; __(&#39;post.copyright.author&#39;) + __(&#39;symbol.colon&#39;) &#125;&#125;&lt;&#x2F;strong&gt;</span><br><span class="line">    &#123;&#123; config.author &#125;&#125;</span><br><span class="line">  &lt;&#x2F;li&gt;</span><br><span class="line">  &lt;li class&#x3D;&quot;my_post-copyright-link&quot;&gt;</span><br><span class="line">    &lt;strong&gt;本文链接：&lt;&#x2F;strong&gt;</span><br><span class="line">    &lt;a href&#x3D;&quot;&#123;&#123; post.permalink &#125;&#125;&quot; title&#x3D;&quot;&#123;&#123; post.title &#125;&#125;&quot;&gt;&#123;&#123; post.permalink &#125;&#125;&lt;&#x2F;a&gt;</span><br><span class="line">  &lt;&#x2F;li&gt;</span><br><span class="line">  &lt;li class&#x3D;&quot;my_post-copyright-link&quot;&gt;</span><br><span class="line">    &lt;strong&gt;发布时间：&lt;&#x2F;strong&gt;&#123;&#123; page.date.format(&quot;YYYY年MM月DD日 - HH:MM&quot;) &#125;&#125;</span><br><span class="line">  &lt;&#x2F;li&gt;</span><br><span class="line">  &lt;li class&#x3D;&quot;my_post-copyright-link&quot;&gt;</span><br><span class="line">    &lt;strong&gt;最后更新：&lt;&#x2F;strong&gt;&#123;&#123; page.updated.format(&quot;YYYY年MM月DD日 - HH:MM&quot;) &#125;&#125;</span><br><span class="line">  &lt;&#x2F;li&gt;</span><br><span class="line"></span><br><span class="line">  &lt;li class&#x3D;&quot;my_post-copyright-license&quot;&gt;</span><br><span class="line">    &lt;strong&gt;&#123;&#123; __(&#39;post.copyright.license_title&#39;) + __(&#39;symbol.colon&#39;) &#125;&#125; &lt;&#x2F;strong&gt;</span><br><span class="line">    &#123;&#123; __(&#39;post.copyright.license_content&#39;, theme.post_copyright.license_url, theme.post_copyright.license) &#125;&#125;</span><br><span class="line">  &lt;&#x2F;li&gt;</span><br><span class="line">&lt;&#x2F;ul&gt;</span><br></pre></td></tr></table></figure>
+<p>到主题配置文件，改<code>enable</code>为<code>True</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">post_copyright:</span><br><span class="line">  enable: true</span><br><span class="line">  license: CC BY-NC-SA 3.0</span><br><span class="line">  license_url: https:&#x2F;&#x2F;creativecommons.org&#x2F;licenses&#x2F;by-nc-sa&#x2F;3.0&#x2F;</span><br></pre></td></tr></table></figure>
+
+<h3 id="4-11-文章结尾页眉"><a href="#4-11-文章结尾页眉" class="headerlink" title="4.11 文章结尾页眉"></a>4.11 文章结尾页眉</h3><p>在路径<code>themes/next/layout/_macro</code>中新建 <code>passage-end-tag.swig</code> 文件,并添加以下内容：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;div&gt;</span><br><span class="line">    &#123;% if not is_index %&#125;</span><br><span class="line">        &lt;div style&#x3D;&quot;text-align:center;color: #ccc;font-size:14px;&quot;&gt;-------------Page&#39;s over&lt;i class&#x3D;&quot;fa fa-paw&quot;&gt;&lt;&#x2F;i&gt;Thanks for reading-------------&lt;&#x2F;div&gt;</span><br><span class="line">    &#123;% endif %&#125;</span><br><span class="line">&lt;&#x2F;div&gt;</span><br></pre></td></tr></table></figure>
+<p>接着打开<code>themes/next/layout/_macro/post.swig</code>文件，添加如下下代码，注意位置<br><img src="http://image.python-online.cn/17-9-9/63041495.jpg" alt=""><br>代码如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;div&gt;</span><br><span class="line">  &#123;% if not is_index %&#125;</span><br><span class="line">    &#123;% include &#39;passage-end-tag.swig&#39; %&#125;</span><br><span class="line">  &#123;% endif %&#125;</span><br><span class="line">&lt;&#x2F;div&gt;</span><br></pre></td></tr></table></figure>
+<p>然后再主题文件增加如下配置，以便可以方便开关这个功能</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># 文章末尾添加“本文结束”标记</span><br><span class="line">passage_end_tag:</span><br><span class="line">  enabled: true</span><br></pre></td></tr></table></figure>
+
+<h3 id="4-12-更改标签的图标"><a href="#4-12-更改标签的图标" class="headerlink" title="4.12 更改标签的图标"></a>4.12 更改标签的图标</h3><p>修改模板<code>/themes/next/layout/_macro/post.swig</code>，搜索 <code>rel=”tag”&gt;#</code>，将 # 换成</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;i class&#x3D;&quot;fa fa-tag&quot;&gt;&lt;&#x2F;i&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="4-13-添加访问量和访客数"><a href="#4-13-添加访问量和访客数" class="headerlink" title="4.13 添加访问量和访客数"></a>4.13 添加访问量和访客数</h3><p><code>\themes\next\layout_partials\footer.swig</code>最前面添加如下代码</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;script async src&#x3D;&quot;https:&#x2F;&#x2F;dn-lbstatics.qbox.me&#x2F;busuanzi&#x2F;2.3&#x2F;busuanzi.pure.mini.js&quot;&gt;&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="4-14-更改容器宽度"><a href="#4-14-更改容器宽度" class="headerlink" title="4.14 更改容器宽度"></a>4.14 更改容器宽度</h3><p>更改NexT容器宽度可以参考这个<a href="http://theme-next.iissnan.com/faqs.html" target="_blank" rel="noopener">常见问题</a><br>Pisces Scheme比较特殊。<br>在<code>themes/next/source/css/_schemes/Pisces/_layout.styl</code>最后面增加如下样式</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">.header&#123;</span><br><span class="line">    width: 80%;</span><br><span class="line">    +tablet() &#123;</span><br><span class="line">        width: 100%;</span><br><span class="line">    &#125;</span><br><span class="line">    +mobile() &#123;</span><br><span class="line">        width: 100%;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">.container .main-inner &#123;</span><br><span class="line">    width: 80%;</span><br><span class="line">    +tablet() &#123;</span><br><span class="line">        width: 100%;</span><br><span class="line">    &#125;</span><br><span class="line">    +mobile() &#123;</span><br><span class="line">        width: 100%;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">.content-wrap &#123;</span><br><span class="line">    width: calc(100% - 260px);</span><br><span class="line">    +tablet() &#123;</span><br><span class="line">        width: 100%;</span><br><span class="line">    &#125;</span><br><span class="line">    +mobile() &#123;</span><br><span class="line">        width: 100%;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="4-15-自定义CSS"><a href="#4-15-自定义CSS" class="headerlink" title="4.15 自定义CSS"></a>4.15 自定义CSS</h3><p>默认的博客文章，是按照你选定的主题来显示。其中可能有些并不那么尽如你意。</p>
+<p>但是没有关系，你可以自己定义自己满意的css样式，以下是我自己定义的。在这里做个记录。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"># 设置图片不居中</span><br><span class="line">themes&#x2F;next&#x2F;source&#x2F;css&#x2F;_common&#x2F;components&#x2F;post&#x2F;post-expand.styl</span><br><span class="line"></span><br><span class="line">.post-gallery-row .fancybox img &#123; margin: 0 auto !important;&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"># 标题格式</span><br><span class="line">themes&#x2F;next&#x2F;source&#x2F;css&#x2F;_common&#x2F;scaffolding&#x2F;base.styl</span><br><span class="line"></span><br><span class="line">h1 &#123;</span><br><span class="line">    font-size: 27px;</span><br><span class="line">    position: relative;</span><br><span class="line">    padding: 15px;</span><br><span class="line">    margin-bottom: 20px;</span><br><span class="line">    border: 1px solid #eee;</span><br><span class="line">    border-radius: 3px;</span><br><span class="line">    border-left-color: red;</span><br><span class="line">    border-left-width: 5px;</span><br><span class="line">    background-color: #406CA4;</span><br><span class="line">    color: #ffffff;</span><br><span class="line">    font-family: cursive;</span><br><span class="line">    border-radius: 15px 15px 15px 15px !important;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="4-16-添加头像"><a href="#4-16-添加头像" class="headerlink" title="4.16 添加头像"></a>4.16 添加头像</h2><p>将你的头像放置到 <code>themes/next/source/images/avatar.png</code></p>
+<p>在 <code>themes/next/_config.yml</code> 设置路径</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">avatar:</span> <span class="string">/images/avatar.png</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="五、其他实用功能"><a href="#五、其他实用功能" class="headerlink" title="五、其他实用功能"></a>五、其他实用功能</h2><h3 id="5-1-给文章加密"><a href="#5-1-给文章加密" class="headerlink" title="5.1 给文章加密"></a>5.1 给文章加密</h3><p>打开themes-&gt;next-&gt;layout-&gt;_partials-&gt;head.swig文件,搜索<code>pace</code>，在这个代码块后面插入这样一段代码：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">    (function()&#123;</span><br><span class="line">        if(&#39;&#123;&#123; page.password &#125;&#125;&#39;)&#123;</span><br><span class="line">            if (prompt(&#39;请输入文章密码&#39;) !&#x3D;&#x3D; &#39;&#123;&#123; page.password &#125;&#125;&#39;)&#123;</span><br><span class="line">                alert(&#39;密码错误！&#39;);</span><br><span class="line">                history.back();</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;)();</span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+<p>然后文章中设置</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">password: 你的密码</span><br></pre></td></tr></table></figure>
+
+<h3 id="5-2-博文压缩"><a href="#5-2-博文压缩" class="headerlink" title="5.2 博文压缩"></a>5.2 博文压缩</h3><p>在站点的根目录下执行以下命令：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ npm install gulp -g</span><br><span class="line">$ npm install gulp-minify-css gulp-uglify gulp-htmlmin gulp-htmlclean gulp --save</span><br></pre></td></tr></table></figure>
+
+<p>在根目录下新建<code>gulpfile.js</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">var gulp &#x3D; require(&#39;gulp&#39;);</span><br><span class="line">var minifycss &#x3D; require(&#39;gulp-minify-css&#39;);</span><br><span class="line">var uglify &#x3D; require(&#39;gulp-uglify&#39;);</span><br><span class="line">var htmlmin &#x3D; require(&#39;gulp-htmlmin&#39;);</span><br><span class="line">var htmlclean &#x3D; require(&#39;gulp-htmlclean&#39;);</span><br><span class="line">&#x2F;&#x2F; 压缩 public 目录 css</span><br><span class="line">gulp.task(&#39;minify-css&#39;, function() &#123;</span><br><span class="line">    return gulp.src(&#39;.&#x2F;public&#x2F;**&#x2F;*.css&#39;)</span><br><span class="line">        .pipe(minifycss())</span><br><span class="line">        .pipe(gulp.dest(&#39;.&#x2F;public&#39;));</span><br><span class="line">&#125;);</span><br><span class="line">&#x2F;&#x2F; 压缩 public 目录 html</span><br><span class="line">gulp.task(&#39;minify-html&#39;, function() &#123;</span><br><span class="line">  return gulp.src(&#39;.&#x2F;public&#x2F;**&#x2F;*.html&#39;)</span><br><span class="line">    .pipe(htmlclean())</span><br><span class="line">    .pipe(htmlmin(&#123;</span><br><span class="line">         removeComments: true,</span><br><span class="line">         minifyJS: true,</span><br><span class="line">         minifyCSS: true,</span><br><span class="line">         minifyURLs: true,</span><br><span class="line">    &#125;))</span><br><span class="line">    .pipe(gulp.dest(&#39;.&#x2F;public&#39;))</span><br><span class="line">&#125;);</span><br><span class="line">&#x2F;&#x2F; 压缩 public&#x2F;js 目录 js</span><br><span class="line">gulp.task(&#39;minify-js&#39;, function() &#123;</span><br><span class="line">    return gulp.src(&#39;.&#x2F;public&#x2F;**&#x2F;*.js&#39;)</span><br><span class="line">        .pipe(uglify())</span><br><span class="line">        .pipe(gulp.dest(&#39;.&#x2F;public&#39;));</span><br><span class="line">&#125;);</span><br><span class="line">&#x2F;&#x2F; 执行 gulp 命令时执行的任务</span><br><span class="line">gulp.task(&#39;default&#39;, [</span><br><span class="line">    &#39;minify-html&#39;,&#39;minify-css&#39;,&#39;minify-js&#39;</span><br><span class="line">]);</span><br></pre></td></tr></table></figure>
+<p>生成博文是执行<code>hexo g &amp;&amp; gulp</code>就会根据<code>gulpfile.js</code>中的配置，对<code>public</code>目录中的静态资源文件进行压缩。</p>
+<h3 id="5-3-设定置顶-顺序"><a href="#5-3-设定置顶-顺序" class="headerlink" title="5.3 设定置顶/顺序"></a>5.3 设定置顶/顺序</h3><p><code>F:\MyBlog\node_modules\hexo-generator-index\lib\generator.js</code>改成下面</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">&#39;use strict&#39;;</span><br><span class="line">var pagination &#x3D; require(&#39;hexo-pagination&#39;);</span><br><span class="line">module.exports &#x3D; function(locals)&#123;</span><br><span class="line">  var config &#x3D; this.config;</span><br><span class="line">  var posts &#x3D; locals.posts;</span><br><span class="line">    posts.data &#x3D; posts.data.sort(function(a, b) &#123;</span><br><span class="line">        if(a.top &amp;&amp; b.top) &#123; &#x2F;&#x2F; 两篇文章top都有定义</span><br><span class="line">            if(a.top &#x3D;&#x3D; b.top) return b.date - a.date; &#x2F;&#x2F; 若top值一样则按照文章日期降序排</span><br><span class="line">            else return b.top - a.top; &#x2F;&#x2F; 否则按照top值降序排</span><br><span class="line">        &#125;</span><br><span class="line">        else if(a.top &amp;&amp; !b.top) &#123; &#x2F;&#x2F; 以下是只有一篇文章top有定义，那么将有top的排在前面（这里用异或操作居然不行233）</span><br><span class="line">            return -1;</span><br><span class="line">        &#125;</span><br><span class="line">        else if(!a.top &amp;&amp; b.top) &#123;</span><br><span class="line">            return 1;</span><br><span class="line">        &#125;</span><br><span class="line">        else return b.date - a.date; &#x2F;&#x2F; 都没定义按照文章日期降序排</span><br><span class="line">    &#125;);</span><br><span class="line">  var paginationDir &#x3D; config.pagination_dir || &#39;page&#39;;</span><br><span class="line">  return pagination(&#39;&#39;, posts, &#123;</span><br><span class="line">    perPage: config.index_generator.per_page,</span><br><span class="line">    layout: [&#39;index&#39;, &#39;archive&#39;],</span><br><span class="line">    format: paginationDir + &#39;&#x2F;%d&#x2F;&#39;,</span><br><span class="line">    data: &#123;</span><br><span class="line">      __index: true</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<p>在文章中添加 top 值，数值越大文章越靠前（默认是0，按时间排序），如</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 解决Charles乱码问题</span><br><span class="line">date: 2017-05-22 22:45:48</span><br><span class="line">tags: 技巧</span><br><span class="line">categories: 技巧</span><br><span class="line">copyright: true</span><br><span class="line">top: 100</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+
+<h3 id="5-5-搜索功能"><a href="#5-5-搜索功能" class="headerlink" title="5.5 搜索功能"></a>5.5 搜索功能</h3><p>参照<a href="https://superbsco.github.io/2017/01/13/new-article/" target="_blank" rel="noopener">这篇博客</a>，搜索<code>搜索功能</code></p>
+<h3 id="5-7-文章内链接文本样式"><a href="#5-7-文章内链接文本样式" class="headerlink" title="5.7 文章内链接文本样式"></a>5.7 文章内链接文本样式</h3><p>在<code>F:\MyBlog\themes\next\source\css\_common\components\post\post.styl</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 文章内链接文本样式</span><br><span class="line">.post-body p a&#123;</span><br><span class="line">  color: #0593d3;</span><br><span class="line">  border-bottom: none;</span><br><span class="line">  border-bottom: 1px solid #0593d3;</span><br><span class="line">  &amp;:hover &#123;</span><br><span class="line">    color: #fc6423;</span><br><span class="line">    border-bottom: none;</span><br><span class="line">    border-bottom: 1px solid #fc6423;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>其中选择.post-body 是为了不影响标题，选择 p 是为了不影响首页“阅读全文”的显示样式,颜色可以自己定义。</p>
+<h3 id="5-8-归档设置分页数量"><a href="#5-8-归档设置分页数量" class="headerlink" title="5.8 归档设置分页数量"></a>5.8 归档设置分页数量</h3><p>在根目录的 <code>_config.yml</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">index_generator:</span><br><span class="line">  per_page: 5</span><br><span class="line"></span><br><span class="line">archive_generator:</span><br><span class="line">  per_page: 20</span><br><span class="line">  yearly: true</span><br><span class="line">  monthly: true</span><br><span class="line"></span><br><span class="line">tag_generator:</span><br><span class="line">  per_page: 10</span><br></pre></td></tr></table></figure>
+
+<h3 id="5-9-设置永久链接"><a href="#5-9-设置永久链接" class="headerlink" title="5.9 设置永久链接"></a>5.9 设置永久链接</h3><p>在根目录的 <code>_config.yml</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">permalink: :year&#x2F;:i_month&#x2F;:i_day&#x2F;:title.html</span><br></pre></td></tr></table></figure>
+<p>博文里设置一下，举个例子</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">permalink: Database-MySQL-Basic_usage</span><br></pre></td></tr></table></figure>
+
+
+
+
+<h2 id="六、多台电脑协同更新博客"><a href="#六、多台电脑协同更新博客" class="headerlink" title="六、多台电脑协同更新博客"></a>六、多台电脑协同更新博客</h2><hr>
+<p>上班后，工作都会给配置了一台电脑，而自己家里也有电脑，有时候我想使用家里电脑更新博客，而有时候我也想使用公司电脑更新博客。</p>
+<p>这就很蛋疼了，因为Markdown的原文只有一份，如何将两台电脑的原文保持一致呢。当然，容易想到的是代管在Github上。</p>
+<h3 id="6-1-Github上操作"><a href="#6-1-Github上操作" class="headerlink" title="6.1 Github上操作"></a>6.1 Github上操作</h3><p>将博客项目分成两个分支</p>
+<ul>
+<li><code>master</code>为博客界面前端文件</li>
+<li><code>hexo</code> 为博文markdown原文</li>
+</ul>
+<p>在web界面新建分支，命名为<code>hexo</code></p>
+<p>在web界面设置 <code>hexo</code> 为默认分支，因为我们只会在这个分支上进行操作。<br><img src="http://image.python-online.cn/image-20200321193444320.png" alt=""></p>
+<h3 id="6-2-本地PC操作"><a href="#6-2-本地PC操作" class="headerlink" title="6.2 本地PC操作"></a>6.2 本地PC操作</h3><p>clone项目到本地：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone git@github.com:iswbm&#x2F;iswbm.github.io.git</span><br></pre></td></tr></table></figure>
+<p>使用 <code>git branch</code> 确认此时的分支是否为hexo，如果不是则上面设置默认分支有误，要重新设置。</p>
+<h3 id="6-3-处理hexo分支"><a href="#6-3-处理hexo分支" class="headerlink" title="6.3 处理hexo分支"></a>6.3 处理hexo分支</h3><p>第一步我们创建hexo分支时，hexo的内容和master的内容是完全一致的，存放的是博客前端文件，这并不是我们想要的，所以我们要先将其清空，再放入我们的文件。</p>
+<p>清空hexo分支</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git checkout --orphan hexo</span><br><span class="line">git rm -rf .</span><br><span class="line">git commit -m &quot;clear hexo branch&quot;</span><br><span class="line">git push origin hexo</span><br></pre></td></tr></table></figure>
+
+<p>将博客原始文件添加进来，但是有一些是没必要放的，具体要放哪些文件，看图片。<br><img src="https://i.loli.net/2018/04/15/5ad31888232e9.png" alt=""></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git add -A</span><br><span class="line">git commit -m &quot;add blog markdown raw files&quot;</span><br></pre></td></tr></table></figure>
+
+<p>添加node_modules/文件夹<br>本来这个文件夹，不需要拷过来的，但是怕安装 <code>hexo-deployer-git</code> 失败，所以之前要拷贝的。</p>
+<p>可以从下面这个链接里获取：</p>
+<blockquote>
+<p>下载链接；<a href="https://pan.baidu.com/s/1-DHgTuxb0mCj_7wdaKqAwQ" target="_blank" rel="noopener">https://pan.baidu.com/s/1-DHgTuxb0mCj_7wdaKqAwQ</a><br>获取密码：pckc</p>
+</blockquote>
+<p>然后检查是否正常渲染</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+
+<p>如果一切正常，那么再确认下 <code>_config.yml</code> 文件的deploy参数的分支是master，我们可不能将其发布到 hexo 分支。</p>
+<p>确认过后，我们就可以发布博客了。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+<p>如果发布出现问题，可能是 <code>hexo-deployer-git</code> 这个插件安装有误，就要想办法装上了。这里就不讲了。</p>
+<h2 id="七、更换电脑后如何迁移博客"><a href="#七、更换电脑后如何迁移博客" class="headerlink" title="七、更换电脑后如何迁移博客"></a>七、更换电脑后如何迁移博客</h2><hr>
+<p>在真实场景里，我们会有可能会换电脑或者将系统进行重装操作，而这个时候如何将之前的电脑上项目（主要是 Markdown原文）迁移过来呢？</p>
+<p>在<code>七、多台电脑协同更新博客</code> 这一节里，我们已经讲过，如何将md原文进行管理。</p>
+<p>那就好办了呀。只要将之前的项目 clone 下来就可以了呀。</p>
+<p>首先肯定是要在新电脑上安装<code>Git</code>，<code>Node.Js</code>，<code>Hexo</code></p>
+<h3 id="7-1-工具安装"><a href="#7-1-工具安装" class="headerlink" title="7.1 工具安装"></a>7.1 工具安装</h3><p><code>安装Git</code>：百度自行下载</p>
+<p><code>安装npm</code>：到 <a href="https://nodejs.org/en/" target="_blank" rel="noopener">官网</a> 下载exe文件安装</p>
+<p><code>安装hexo</code>：执行以下命令安装（注意需要新开一个git bash窗口，不然会提示找不到npm命令）</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo</span><br></pre></td></tr></table></figure>
+
+<h3 id="7-2-clone最新分支"><a href="#7-2-clone最新分支" class="headerlink" title="7.2 clone最新分支"></a>7.2 clone最新分支</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone git@github.com:iswbm&#x2F;iswbm.github.io.git</span><br></pre></td></tr></table></figure>
+
+<p>添加node_modules/文件夹<br>本来这个文件夹，不需要拷过来的，但是怕安装 <code>hexo-deployer-git</code> 失败，所以这里我直接备份一份，可以拷贝覆盖上即可。</p>
+<blockquote>
+<p>下载链接；<a href="https://pan.baidu.com/s/1-DHgTuxb0mCj_7wdaKqAwQ" target="_blank" rel="noopener">https://pan.baidu.com/s/1-DHgTuxb0mCj_7wdaKqAwQ</a><br>获取密码：pckc</p>
+</blockquote>
+<p>完成之后，应该就可以正常更新博客了。</p>
+<p>在写完文章后，一定要注意操作顺序。</p>
+<ol>
+<li><p>先将hexo分支push要远端</p>
+</li>
+<li><p>再执行部署到master分支。</p>
+</li>
+</ol>
+<p>不然哪天这个电脑又出现故障，那就麻烦了。</p>
+<h2 id="附录：参考文档"><a href="#附录：参考文档" class="headerlink" title="附录：参考文档"></a>附录：参考文档</h2><hr>
+<ul>
+<li><a href="https://hexo.io/zh-cn/docs/index.html" target="_blank" rel="noopener">Hexo  官方使用文档 - 中文</a></li>
+<li><a href="http://theme-next.iissnan.com/getting-started.html" target="_blank" rel="noopener">Hexo Next 主题 官方使用文档 - 中文</a></li>
+<li><a href="https://www.jianshu.com/p/f054333ac9e6" target="_blank" rel="noopener">Hexo的next主题个性化教程：打造炫酷网站</a></li>
+<li><a href="https://www.zhihu.com/question/21193762" target="_blank" rel="noopener">使用hexo：如果换了电脑怎么更新博客？</a></li>
+<li><a href="https://zhuanlan.zhihu.com/p/26625249" target="_blank" rel="noopener">GitHub+Hexo 搭建个人网站详细教程</a></li>
+<li><a href="https://github.com/gitalk/gitalk/blob/master/readme-cn.md" target="_blank" rel="noopener">Gitalk：基于 Github Issue 和 Preact 开发的评论插件</a></li>
+<li><a href="https://thief.one/2017/03/03/Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B/" target="_blank" rel="noopener">Hexo搭建博客教程</a></li>
+</ul>
+<hr>
+<p><img src="http://image.python-online.cn/image-20200320125724880.png" alt="关注公众号，获取最新干货！"></p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    <div>
+      
+        <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------Page's over<i class="fa fa-paw"></i>Thanks for reading-------------</div>
+    
+</div>
+
+      
+    </div>
+
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="my_post-copyright-author">
+    <strong>Post author:</strong>
+    王炳明
+  </li>
+  <li class="my_post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="http://python.iswbm.com/2020/03/21/1/" title="全网最全最实用的 Hexo 博客搭建教程">http://python.iswbm.com/2020/03/21/1/</a>
+  </li>
+  <li class="my_post-copyright-link">
+    <strong>发布时间：</strong>2020年03月21日 - 20:03
+  </li>
+  <li class="my_post-copyright-link">
+    <strong>最后更新：</strong>2020年03月21日 - 20:03
+  </li>
+
+  <li class="my_post-copyright-license">
+    <strong>Copyright Notice: </strong>
+    All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> unless stating additionally.
+  </li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/avatar.png"
+                alt="王炳明" />
+            
+              <p class="site-author-name" itemprop="name">王炳明</p>
+              <p class="site-description motion-element" itemprop="description">记录明哥的代码生活</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/%20%7C%7C%20archive">
+              
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/iswbm" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:wongbingming@163.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope-o"></i>E-Mail</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="http://weibo.com/942663728" target="_blank" title="微博">
+                      
+                        <i class="fa fa-fw fa-weibo"></i>微博</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="http://image.python-online.cn/17-9-9/58657236.jpg" target="_blank" title="WeChat">
+                      
+                        <i class="fa fa-fw fa-weixin"></i>WeChat</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://www.zhihu.com/people/wongbingming/activities" target="_blank" title="知乎">
+                      
+                        <i class="fa fa-fw fa-chain-broken"></i>知乎</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="http://www.cnblogs.com/wongbingming/" target="_blank" title="CnBlog">
+                      
+                        <i class="fa fa-fw fa-file-text-o"></i>CnBlog</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#一、创建博客项目"><span class="nav-number">1.</span> <span class="nav-text">一、创建博客项目</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-1-准备工作"><span class="nav-number">1.1.</span> <span class="nav-text">1.1 准备工作</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-2-初始化项目"><span class="nav-number">1.2.</span> <span class="nav-text">1.2 初始化项目</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-3-部署上线"><span class="nav-number">1.3.</span> <span class="nav-text">1.3 部署上线</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-4-绑定域名"><span class="nav-number">1.4.</span> <span class="nav-text">1.4 绑定域名</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二、丰富博客页面"><span class="nav-number">2.</span> <span class="nav-text">二、丰富博客页面</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-标签页"><span class="nav-number">2.1.</span> <span class="nav-text">2.1 标签页</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-分类页面"><span class="nav-number">2.2.</span> <span class="nav-text">2.2 分类页面</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-3-关于页面"><span class="nav-number">2.3.</span> <span class="nav-text">2.3 关于页面</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#三、博文书写技巧"><span class="nav-number">3.</span> <span class="nav-text">三、博文书写技巧</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#3-1-引用块"><span class="nav-number">3.1.</span> <span class="nav-text">3.1 引用块</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-2-一键生成md头格式"><span class="nav-number">3.2.</span> <span class="nav-text">3.2 一键生成md头格式</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#四、美化博客"><span class="nav-number">4.</span> <span class="nav-text">四、美化博客</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#4-1-更换主题"><span class="nav-number">4.1.</span> <span class="nav-text">4.1 更换主题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-2-ico缩略图"><span class="nav-number">4.2.</span> <span class="nav-text">4.2 ico缩略图</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-3-菜单栏和图标"><span class="nav-number">4.3.</span> <span class="nav-text">4.3 菜单栏和图标</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-4-社交网络和图标"><span class="nav-number">4.4.</span> <span class="nav-text">4.4 社交网络和图标</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-5-背景动画"><span class="nav-number">4.5.</span> <span class="nav-text">4.5 背景动画</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-6-添加热度"><span class="nav-number">4.6.</span> <span class="nav-text">4.6 添加热度</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-7-分享插件JiaThis"><span class="nav-number">4.7.</span> <span class="nav-text">4.7 分享插件JiaThis</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-8-Fork-me-on-Github"><span class="nav-number">4.8.</span> <span class="nav-text">4.8 Fork me on Github</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-9-设置阅读全文"><span class="nav-number">4.9.</span> <span class="nav-text">4.9 设置阅读全文</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-10-添加版权"><span class="nav-number">4.10.</span> <span class="nav-text">4.10 添加版权</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-11-文章结尾页眉"><span class="nav-number">4.11.</span> <span class="nav-text">4.11 文章结尾页眉</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-12-更改标签的图标"><span class="nav-number">4.12.</span> <span class="nav-text">4.12 更改标签的图标</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-13-添加访问量和访客数"><span class="nav-number">4.13.</span> <span class="nav-text">4.13 添加访问量和访客数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-14-更改容器宽度"><span class="nav-number">4.14.</span> <span class="nav-text">4.14 更改容器宽度</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-15-自定义CSS"><span class="nav-number">4.15.</span> <span class="nav-text">4.15 自定义CSS</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-16-添加头像"><span class="nav-number">5.</span> <span class="nav-text">4.16 添加头像</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#五、其他实用功能"><span class="nav-number">6.</span> <span class="nav-text">五、其他实用功能</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#5-1-给文章加密"><span class="nav-number">6.1.</span> <span class="nav-text">5.1 给文章加密</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-2-博文压缩"><span class="nav-number">6.2.</span> <span class="nav-text">5.2 博文压缩</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-3-设定置顶-顺序"><span class="nav-number">6.3.</span> <span class="nav-text">5.3 设定置顶&#x2F;顺序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-5-搜索功能"><span class="nav-number">6.4.</span> <span class="nav-text">5.5 搜索功能</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-7-文章内链接文本样式"><span class="nav-number">6.5.</span> <span class="nav-text">5.7 文章内链接文本样式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-8-归档设置分页数量"><span class="nav-number">6.6.</span> <span class="nav-text">5.8 归档设置分页数量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-9-设置永久链接"><span class="nav-number">6.7.</span> <span class="nav-text">5.9 设置永久链接</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#六、多台电脑协同更新博客"><span class="nav-number">7.</span> <span class="nav-text">六、多台电脑协同更新博客</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#6-1-Github上操作"><span class="nav-number">7.1.</span> <span class="nav-text">6.1 Github上操作</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-2-本地PC操作"><span class="nav-number">7.2.</span> <span class="nav-text">6.2 本地PC操作</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-3-处理hexo分支"><span class="nav-number">7.3.</span> <span class="nav-text">6.3 处理hexo分支</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#七、更换电脑后如何迁移博客"><span class="nav-number">8.</span> <span class="nav-text">七、更换电脑后如何迁移博客</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#7-1-工具安装"><span class="nav-number">8.1.</span> <span class="nav-text">7.1 工具安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-2-clone最新分支"><span class="nav-number">8.2.</span> <span class="nav-text">7.2 clone最新分支</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#附录：参考文档"><span class="nav-number">9.</span> <span class="nav-text">附录：参考文档</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">王炳明</span>
+
+  
+</div>
+
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'vXvm9twDOpxxsgApoWKKkGkp-gzGzoHsz',
+        appKey: 'ul7l02cKXfTW8kWda336DWB8',
+        placeholder: 'Just go go',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

@@ -3,17 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle: ''
-description: ''
-keywords:
-author: John Doe
+title: 写代码的时光
+subtitle: '明哥'
+description: '记录明哥的代码生活'
+keywords: python,go
+author: 王炳明
 language: en
 timezone: ''
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: http://python.iswbm.com
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -60,6 +60,17 @@ index_generator:
   path: ''
   per_page: 10
   order_by: -date
+
+#index_generator:
+#  per_page: 5
+
+archive_generator:
+  per_page: 20
+  yearly: true
+  monthly: true
+
+tag_generator:
+  per_page: 10
 
 # Category & Tag
 default_category: uncategorized

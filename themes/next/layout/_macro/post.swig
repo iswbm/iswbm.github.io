@@ -209,7 +209,7 @@
                {% if theme.post_meta.item_text %}
                  <span class="post-meta-item-text">{{__('post.visitors')}}&#58;</span>
                {% endif %}
-                 <span class="leancloud-visitors-count"></span>
+                 <span class="leancloud-visitors-count">℃</span>
              </span>
           {% endif %}
 
@@ -339,6 +339,12 @@
         {% include 'wechat-subscriber.swig' %}
       </div>
     {% endif %}
+
+    <div>
+      {% if not is_index %}
+        {% include 'passage-end-tag.swig' %}
+      {% endif %}
+    </div>
 
     {% if (theme.alipay or theme.wechatpay or theme.bitcoin) and not is_index %}
       <div>
